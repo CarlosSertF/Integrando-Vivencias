@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrando Vivências - Admin</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="figs/LOGO.png" alt="Logo" width="150px">
+        </a>
+        <div class="botoes">
+            <a href="index.html" class="botao-modelo1">Início</a>
+            <a href="creditos.html" class="botao-modelo2">Créditos</a>
+        </div>
+    </header>
+
+    <form id="cadastro-usuario">
+        <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required></textarea>
+        </div>
+
+        <label for="filtro">Pesquisar Usuário:</label>
+
+        <div class="filtro">
+            <input type="text" id="pesquisa" placeholder="Pesquisar por nome, email ou usuário..." oninput="pesquisarUsuarios()"/>
+            <button onclick="pesquisarUsuarios()" class="botao-modelo1">Filtrar</button>
+        </div>
+
+        
+
+        <div class="botoes-forms">
+            <button type="submit" id="cadastrar" class="botao-modelo2">Cadastrar</button>
+
+            <input type="reset" value="Limpar Formulário" class="botao-modelo1">
+
+            <button type="button" id="listar" class="botao-modelo2">Listar</button>
+            
+            <button type="button" id="limpar" class="botao-modelo1">Limpar Lista</button>
+        </div>
+            
+    </form>
+
+    <div id="lista-usuarios" style="margin-top: 20px;"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

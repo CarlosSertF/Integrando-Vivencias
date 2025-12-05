@@ -1,0 +1,155 @@
+header{
+    position: sticky; 
+    top: 0;
+    background-color: white;
+    border-color: black;
+    font-family: cursive;
+    padding-left: 15px;
+}
+
+body{
+    margin: 0;
+    background-image: url("figs/LOGO-FUNDO.png"), 
+    linear-gradient(to right, #1796ae, #e58383);
+    color:white;
+    font-family: cursive;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+footer{
+    margin: 20px ;
+}
+
+.botoes{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20%;
+    gap: 20px;
+}
+
+.botao-modelo1{
+    font-family: cursive;
+    padding: 8px 16px;
+    background-color: #e58383;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao-modelo2{
+    font-family: cursive;
+    padding: 8px 16px;
+    background-color: #1796ae;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.conteudo-main {
+    display: flex;
+    gap: 60px; 
+    max-width: 1000px; 
+    margin: 20px auto; 
+    align-items: flex-start; 
+}
+
+.conteudo-main figure {
+    flex-shrink: 0; 
+}
+
+.texto{
+    flex-grow: 1; 
+}
+
+form{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.filtro{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.botoes-forms{
+    display: flex;
+    gap: 20px;
+}
+
+.botao-modelo1:hover{
+    background-color: #ca6e6e;
+    transition: 200ms;
+}
+
+.botao-modelo2:hover
+{
+    background-color: #0d7d94;
+    transition: 200ms;
+}
+
+.card-usuario{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin: 40px auto;
+    border-radius: 8px;
+    background-color: white;
+    max-width: 300px;
+    color: black;
+}
+
+.lista-usuarios{
+    margin:40px auto;
+}
+
+.btn-excluir {
+    padding: 8px 12px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: cursive;
+    
+    
+}
+
+.btn-excluir:hover {
+    background-color: #b71c1c;
+    transition: 200ms;
+}
+
+
+
